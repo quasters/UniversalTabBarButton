@@ -21,12 +21,12 @@ class ViewControllerWithUniversalButton: UIViewController {
     private lazy var universalTabBarButton: UIButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(universalButtonAction), for: .touchUpInside)
-        button.backgroundColor = .blue
+        button.backgroundColor = .yellow
         
         button.layer.cornerRadius = universalTabBarButtonButtonDiameter / 2
         button.layer.masksToBounds = true
         
-        button.setImage(UIImage(systemName: "plus")?.withRenderingMode(.alwaysOriginal).withTintColor(.white),
+        button.setImage(UIImage(systemName: "plus")?.withRenderingMode(.alwaysOriginal).withTintColor(.black),
                         for: .normal)
         button.isHidden = true
         return button
